@@ -4,7 +4,7 @@
 #include <string>
 #include <string.h>
 #include <time.h>
-#define MAX_NUM 100000
+#define MAX_NUM 100001
 using namespace std;
 
 /* git url : https://github.com/FuckML/NTS.git */
@@ -33,7 +33,7 @@ public:
     for (int i = 0; i < number; i++) { // 사원 수 만큼 반복
       id_st = "NT";
       while (1) {
-        id_num = rand() % 99999; // 난수 저장
+        id_num = rand() % 100000; // 난수 저장
         if (!check[id_num]) { // 이미 출력한 사원이 아니라면
           check[id_num] = true; // 출력된 사원으로 체크
           break; // 루프 종료
